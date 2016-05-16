@@ -71,7 +71,6 @@ function divider(numbersArray) {
 }
 //Next Problem
 
-
 var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
 };
@@ -80,7 +79,10 @@ var getRandomArbitrary = function() {
 
 // Your job is to write a function named finder that will get a random number (by invoking getRandomArbitrary), then loop through the array (that will be passed in as a parameter) to see if that random number is in the array. If it is, return true, if it's not, return false
 
-  //Code Here
+function finder(array) {
+  var a = array.indexOf(getRandomArbitrary()) >= 0 ? true : false ;
+  return a;
+}
 
   //Code Here
 
